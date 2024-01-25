@@ -17,7 +17,7 @@ export default function header() {
     <div
       className="left-0 p-4 w-full ease-in duration-300 z-50"
     >
-      <div className="topbar m-auto flex justify-between items-center px-4 py-2">
+      <div className="topbar m-auto flex justify-between items-center px-1 md:px-4 py-2">
         <Link href="/">
           <h1 className="text-2xl text-white">
             INJLending
@@ -35,9 +35,7 @@ export default function header() {
             </li>
           ))}
           <li className='px-4'>
-            {/* <Link href="/"> */}
-              <ConnectWallet />
-            {/* </Link> */}
+            <ConnectWallet />
           </li>
         </ul>
 
@@ -46,14 +44,12 @@ export default function header() {
           {nav ? (
             <></>
           ) : (
-            // <Link href='/' className={`z-0`}>
-              <ConnectWallet />
-            // </Link>
+            <ConnectWallet />
           )}
           {nav ? (
-            <AiOutlineClose onClick={handleNav} size={20} className={`text-white z-10`} />
+            <AiOutlineClose onClick={handleNav} size={20} className={`text-white z-10 ml-2`} />
           ) : (
-            <AiOutlineMenu onClick={handleNav} size={20} className={`text-white z-10`} />
+            <AiOutlineMenu onClick={handleNav} size={20} className={`text-white z-10 ml-2`} />
           )}
         </div>
 

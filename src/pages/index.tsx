@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center p-10 md:p-24 ${inter.className}`}
     >
-      <div className={`text-center text-6xl max-w-[1000px] leading-snug`}>BORROW & LEND AGAINST YOUR NFTS, INSTANTLY</div>
+      <div className={`text-center text-3xl md:text-6xl max-w-[1000px] leading-snug`}>BORROW & LEND AGAINST YOUR NFTS, INSTANTLY</div>
       <div className="flex content-center mt-5">
         <Link
           href="/lend"

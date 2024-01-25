@@ -13,7 +13,7 @@ const ConnectWallet = (props: Props) => {
       onClick={connectWallet}
       className={`common-outline-btn text-white px-5 py-2 shine shadow-md`}
     >
-      Connect Wallet
+      {btnText}
     </button>
   );
 };
